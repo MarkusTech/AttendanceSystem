@@ -107,7 +107,7 @@ header("Location: index.php");
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Attendance and Payroll System</title>
+    <title>Attendance System</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -145,6 +145,7 @@ header("Location: index.php");
             <p id="date"><?php echo $today; ?></p>
             <p id="time" class="bold"><?php echo $time; ?></p>
         </div>
+        <h1><b>&emsp;&ensp;ATTENDANCE</b></h1>
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
@@ -187,6 +188,9 @@ header("Location: index.php");
 
         </div>
     </div>
+    <a href="http://192.168.1.8:8080/breaktime/index.php">
+        <button style="background-color: limegreen;">Break Time</button>
+    </a>
     <br><br>
 
 

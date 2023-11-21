@@ -164,12 +164,12 @@ include("controller.php");
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Attendance</h1>
+                            <h1 class="m-0 text-dark">Break Time Records</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="home.php">Home</a></li>
-                                <li class="breadcrumb-item active">Attendance</li>
+                                <li class="breadcrumb-item active">Break Time</li>
                             </ol>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ include("controller.php");
                                     </thead>
                                     <tbody>
                                         <?php
-                $sql = "SELECT * FROM emp_attendance, emp_list, emp_sched WHERE emp_attendance.employee_id = emp_list.emp_card AND emp_list.sched_id = emp_sched.sched_id";
+                $sql = "SELECT * FROM emp_attendance2, emp_list, emp_sched WHERE emp_attendance2.employee_id = emp_list.emp_card AND emp_list.sched_id = emp_sched.sched_id";
                 $result = mysqli_query($db, $sql);
                 while($row = mysqli_fetch_array($result))
                 {
@@ -204,7 +204,7 @@ include("controller.php");
                                             <td><?php echo $row['attendance_date']; ?></td>
                                             <td><?php echo $row['employee_id']; ?></td>
                                             <td><?php echo $row['employee_name']; ?></td>
-                                            <td><?php echo $row['attendance_timein']; ?> <span class="float-right badge bg-success">On Time</span></td>
+                                            <td><?php echo $row['attendance_timein']; ?></td>
                                             <td><?php echo $row['attendance_timeout']; ?></td>
                                         </tr>
                                         <?php
