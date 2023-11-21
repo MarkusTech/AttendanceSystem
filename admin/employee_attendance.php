@@ -48,7 +48,7 @@ include("controller.php");
                         <span class="hidden-xs"><?php echo $_SESSION['name']; ?></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                         <span class="dropdown-item dropdown-header" style="max-height: 150px; overflow:hidden; background:#222d32;">
+                        <span class="dropdown-item dropdown-header" style="max-height: 150px; overflow:hidden; background:#222d32;">
                             <div class="image">
                                 <img src="dist/img/favicon.ico" style="border-radius: 50%;width: 100x;height: 100px;" alt="User Image">
                             </div>
