@@ -1,7 +1,4 @@
-<!-- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
+
 <?php 
 include("admin/controller.php");
 ini_set('display_errors', 0);
@@ -106,10 +103,6 @@ header("Location: index.php");
 ?>
 <!DOCTYPE html>
 <html>
-<!-- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw -->
 
 <head>
     <meta charset="utf-8">
@@ -145,10 +138,6 @@ header("Location: index.php");
     </style>
 </head>
 
-<!-- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw -->
 
 <body class="hold-transition login-page">
     <div class="login-box">
@@ -162,10 +151,7 @@ header("Location: index.php");
                 <p class="login-box-msg">Enter Employee ID</p>
 
                 <form method="POST">
-                    <!-- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw -->
+
                     <div class="input-group mb-3">
                         <select name="operation" class="form-control">
                             <option value="time-in">Time In</option>
@@ -203,10 +189,6 @@ header("Location: index.php");
     </div>
     <br><br>
 
-    <!-- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw -->
 
     <script src="admin/plugins/jquery/jquery.min.js"></script>
     <script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -230,9 +212,3 @@ header("Location: index.php");
 </body>
 
 </html>
-
-
-<!--- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
