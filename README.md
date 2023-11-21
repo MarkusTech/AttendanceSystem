@@ -1,6 +1,6 @@
 ## Employ-Actevity-Attendance-System
 
-Employ-Actevity-Attendance-System in PHP - Code Camp BD<br/>
+Employ-Actevity-Attendance-System in PHP<br/>
 
 <br/>
 ## How to run the Employ-Actevity-Attendance-System<br/>
@@ -21,7 +21,7 @@ Employ-Actevity-Attendance-System in PHP - Code Camp BD<br/>
 <br/>
 Credential for admin panel : <br/>
 Username: admin <br/>
-Password: Watch Youtube (<a href = "https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw" target="_blank"> Video </a>  ) <br/>
+Password: wmr
 
 ## User Panel Preview
 
