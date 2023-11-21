@@ -67,7 +67,7 @@ include("controller.php");
 
             <a href="home.php" class="brand-link">
                 <img src="dist/img/Logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
-                <span class="brand-text font-weight-light">Employ Attendance</span>
+                <span class="brand-text font-weight-light">Banquerigo Attendance</span>
             </a>
 
             <div class="sidebar">
