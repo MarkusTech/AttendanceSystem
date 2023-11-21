@@ -1,18 +1,10 @@
-<!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
+
 <?php
 include("controller.php");
 ?>
 <!DOCTYPE html>
 <html>
-<!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
+
 
 <head>
     <meta charset="utf-8">
@@ -39,12 +31,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
-
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
 
             <ul class="navbar-nav">
@@ -60,11 +46,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
             </form>
 
             <ul class="navbar-nav ml-auto">
-                <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
@@ -87,12 +68,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
             </ul>
         </nav>
 
-        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
-
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: #222d32;">
 
@@ -100,11 +75,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                 <img src="dist/img/Logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
                 <span class="brand-text font-weight-light">Employ Attendance</span>
             </a>
-            <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
 
             <div class="sidebar">
@@ -129,11 +99,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                                 </p>
                             </a>
                         </li>
-                        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
@@ -166,11 +131,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                                 </p>
                             </a>
                         </li>
-                        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                         <li class="nav-item">
                             <a href="employee_positions.php" class="nav-link">
@@ -180,11 +140,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                                 </p>
                             </a>
                         </li>
-                        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                         <li class="nav-item">
                             <a href="print_payroll.php" class="nav-link">
@@ -206,16 +161,8 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
         </aside>
 
         <div class="content-wrapper">
-            <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
             <div class="content-header">
-                <div style="padding-top: 10px;">
-                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()"> <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> is the sole owner of this script. It is not suitable for personal use. And releasing it in demo version. Besides, it is being provided for free only from <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a>. For any of your problems contact us on <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> facebook group / page or message <a href="https://www.facebook.com/dev.mhrony">MH RONY</a> on facebook. Thanks for staying with <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a>.</marquee>
-                </div>
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
@@ -230,11 +177,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                     </div>
                 </div>
             </div>
-            <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
             <section class="content">
                 <?php
@@ -265,11 +207,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
       }
       //session_unset();
       ?>
-                <!--- Author By: MH RONY
-      Author Website: https://developerrony.com
-      Github Link: https://github.com/dev-mhrony
-      Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-      -->
 
                 <div class="row">
                     <div class="col-12">
@@ -295,11 +232,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                 while($row = mysqli_fetch_array($result))
                 {
                 ?>
-                                        <!--- Author By: MH RONY
-                Author Website: https://developerrony.com
-                Github Link: https://github.com/dev-mhrony
-                Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-                -->
 
                                         <tr>
                                             <td><?php echo $row['emp_card']; ?></td>
@@ -321,11 +253,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
             </section>
 
         </div>
-        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
     </div>
 
@@ -340,11 +267,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                 </div>
                 <div class="modal-body">
                     <form method="POST">
-                        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                         <div class="form-group row">
                             <label class="col-sm-1 col-form-label"></label>
@@ -353,11 +275,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                                 <input type="text" class="form-control" name="position_title" placeholder="" required>
                             </div>
                         </div>
-                        <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                         <div class="form-group row">
                             <label class="col-sm-1 col-form-label"></label>
@@ -378,12 +295,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
         </div>
         <!-- /.modal-dialog -->
     </div>
-    <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
-
 
     <div id="change_sched_modal" class="modal fade">
         <div class="modal-dialog" role="document">
@@ -394,11 +305,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
                 <form method="POST">
                     <div class="modal-body" id="change_sched_details">
@@ -412,11 +318,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
         </div>
     </div>
     </div>
-    <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
     <script>
     $(document).ready(function() {
@@ -436,12 +337,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
         });
     });
     </script>
-    <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
-
 
     <script src="plugins/toastr/toastr.min.js"></script>
     <script src="plugins/jquery/jquery.min.js"></script>
@@ -451,11 +346,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
     <script src="dist/js/adminlte.min.js"></script>
     <script src="dist/js/demo.js"></script>
     <script src="plugins/sweetalert2/sweetalert2.min.js"></script>
-    <!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
     <script>
     $(function() {
@@ -471,10 +361,5 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
     });
     </script>
 </body>
-<!--- Author By: MH RONY
-Author Website: https://developerrony.com
-Github Link: https://github.com/dev-mhrony
-Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
--->
 
 </html>
