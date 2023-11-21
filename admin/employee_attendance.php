@@ -70,7 +70,6 @@ include("controller.php");
                 <span class="brand-text font-weight-light">Banquerigo Attendance</span>
             </a>
 
-
             <div class="sidebar">
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column text-sm nav-flat nav-legacy nav-compact" data-widget="treeview" role="menu" data-accordion="false">

@@ -12,7 +12,7 @@ if(isset($_POST['Sign_in']))
 
   $password = md5($password);
 
-  $sql = "SELECT * FROM accounts WHERE username='wmr' AND password='wmr";
+  $sql = "SELECT * FROM accounts WHERE username='wmr' AND password='wmr'";
   $result = mysqli_query($db, $sql);
 
   if (!$row = $result->fetch_assoc()){
