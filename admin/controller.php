@@ -12,7 +12,7 @@ if(isset($_POST['Sign_in']))
 
   $password = md5($password);
 
-  $sql = "SELECT * FROM accounts WHERE username='banquerigo' AND password='admin'";
+  $sql = "SELECT * FROM accounts WHERE username='wmr' AND password='wmr";
   $result = mysqli_query($db, $sql);
 
   if (!$row = $result->fetch_assoc()){
@@ -31,7 +31,7 @@ if(isset($_POST['Sign_in']))
   else {
       $_SESSION['name'] = $row['name'];
       $_SESSION['username'] = $row['username'];
-      $sql = "SELECT * FROM accounts WHERE username = 'banquerigo' and password = 'admin' ";
+      $sql = "SELECT * FROM accounts WHERE username = 'wmr' and password = 'wmr' ";
       $result = mysqli_query($db, $sql);
       $row = $result->fetch_assoc();
       $_SESSION['username'] = $username;
