@@ -1,10 +1,5 @@
-
 <?php
 include("controller.php");
-
-if($_SESSION == ""){
-    header("Location: index.php"); 
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,14 +7,19 @@ if($_SESSION == ""){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Staf Attendance | Dashboard</title>
+    <title>HR | Dashboard</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- DataTables -->
     <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
-    <?php
-  include("header.php");
-  ?>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
 </head>
 
@@ -50,7 +50,7 @@ if($_SESSION == ""){
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <span class="dropdown-item dropdown-header" style="max-height: 150px; overflow:hidden; background:#222d32;">
                             <div class="image">
-                                <img src="dist/img/me.jpg" style="border-radius: 50%;width: 100x;height: 100px;" alt="User Image">
+                                <img src="dist/img/favicon.ico" style="border-radius: 50%;width: 100x;height: 100px;" alt="User Image">
                             </div>
                         </span>
 
@@ -62,7 +62,6 @@ if($_SESSION == ""){
 
             </ul>
         </nav>
-
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: #222d32;">
 
@@ -76,7 +75,7 @@ if($_SESSION == ""){
                     <ul class="nav nav-pills nav-sidebar flex-column text-sm nav-flat nav-legacy nav-compact" data-widget="treeview" role="menu" data-accordion="false">
 
                         <li class="nav-item">
-                            <a href="home.php" class="nav-link active">
+                            <a href="home.php" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -84,8 +83,8 @@ if($_SESSION == ""){
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="employee_attendance.php" class="nav-link">
+                        <li class="nav-item active">
+                            <a href="employee_attendance.php" class="nav-link active">
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
                                     Attendance
@@ -160,16 +159,17 @@ if($_SESSION == ""){
         </aside>
 
         <div class="content-wrapper">
+
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Dashboard</h1>
+                            <h1 class="m-0 text-dark">Attendance</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="home.php">Home</a></li>
-                                <li class="breadcrumb-item active">Dashboard</li>
+                                <li class="breadcrumb-item active">Attendance</li>
                             </ol>
                         </div>
                     </div>
@@ -177,115 +177,81 @@ if($_SESSION == ""){
             </div>
 
             <section class="content">
-                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
 
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-
-                            <div class="small-box bg-dark">
-                                <div class="inner">
-                                    <?php
-                $sql0 = "SELECT count(emp_id) As 'Total' FROM emp_list";
-                $result0 = mysqli_query($db, $sql0);
-                $row0 = mysqli_fetch_array($result0);
-                $num0 = $row0['Total'];
+                        <div class="card">
+                            <div class="card-body">
+                                <table id="example1" class="table table-bordered dataTable no-footer" role="grid" aria-describedby="example1_info">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Employee ID</th>
+                                            <th>Name</th>
+                                            <th>Break In</th>
+                                            <th>Break Out</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                $sql = "SELECT * FROM emp_attendance, emp_list, emp_sched WHERE emp_attendance.employee_id = emp_list.emp_card AND emp_list.sched_id = emp_sched.sched_id";
+                $result = mysqli_query($db, $sql);
+                while($row = mysqli_fetch_array($result))
+                {
+                  if($row['attendance_timein'] <= $row['sched_in']) {
                 ?>
-                                    <h3><?php echo $num0; ?></h3>
-
-                                    <p>Employee / Staff</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-bag"></i>
-                                </div>
-                                <a href="employee_list.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                        <tr>
+                                            <td><?php echo $row['attendance_date']; ?></td>
+                                            <td><?php echo $row['employee_id']; ?></td>
+                                            <td><?php echo $row['employee_name']; ?></td>
+                                            <td><?php echo $row['attendance_timein']; ?> <span class="float-right badge bg-success">On Time</span></td>
+                                            <td><?php echo $row['attendance_timeout']; ?></td>
+                                        </tr>
+                                        <?php
+                  }
+                  else {
+                ?>
+                                        <tr>
+                                            <td><?php echo $row['attendance_date']; ?></td>
+                                            <td><?php echo $row['employee_id']; ?></td>
+                                            <td><?php echo $row['employee_name']; ?></td>
+                                            <td><?php echo $row['attendance_timein']; ?> <span class="float-right badge bg-warning">Late</span></td>
+                                            <td><?php echo $row['attendance_timeout']; ?></td>
+                                        </tr>
+                                        <?php
+                  }
+                }
+                ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-
-                        <div class="col-lg-3 col-6">
-
-                            <div class="small-box bg-dark">
-                                <div class="inner">
-                                    <?php
-                $sql1 = "SELECT count(pos_id) As 'Pos' FROM emp_position";
-                $result1 = mysqli_query($db, $sql1);
-                $row1 = mysqli_fetch_array($result1);
-                $num1 = $row1['Pos'];
-                ?>
-                                    <h3><?php echo $num1; ?></h3>
-
-                                    <p>Total Positions</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-stats-bars"></i>
-                                </div>
-                                <a href="employee_positions.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-6">
-
-                            <div class="small-box bg-dark">
-                                <div class="inner">
-                                    <?php
-                $sql2 = "SELECT count(*) As 'Ontime' FROM emp_attendance, emp_list, emp_sched WHERE emp_attendance.attendance_timein <= emp_sched.sched_in AND emp_attendance.employee_id = emp_list.emp_card AND emp_sched.sched_id = emp_list.sched_id AND emp_attendance.attendance_date = CURDATE(); ";
-                $result2 = mysqli_query($db, $sql2);
-                $row2 = mysqli_fetch_array($result2);
-                ?>
-                                    <h3><?php echo $row2['Ontime']; ?></h3>
-
-                                    <p>On Time Today</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-person-add"></i>
-                                </div>
-                                <a href="employee_attendance.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-6">
-                            <div class="small-box bg-dark">
-                                <div class="inner">
-                                    <?php
-                $sql3 = "SELECT count(*) As 'Late' FROM emp_attendance, emp_list, emp_sched WHERE emp_attendance.attendance_timein > emp_sched.sched_in AND emp_attendance.employee_id = emp_list.emp_card AND emp_sched.sched_id = emp_list.sched_id AND emp_attendance.attendance_date = CURDATE(); ";
-                $result3 = mysqli_query($db, $sql3);
-                $row3 = mysqli_fetch_array($result3);
-                ?>
-                                    <h3><?php echo $row3['Late']; ?></h3>
-                                    <p>Late Today</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-pie-graph"></i>
-                                </div>
-                                <a href="employee_attendance.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-
                     </div>
-
-                    <div class="row">
-                        <section class="col-lg-5 connectedSortable">
-
-
-                        </section>
-                    </div>
-
                 </div>
             </section>
 
         </div>
 
-        <div>
-            <p class="footer_copy " style="text-align: center;"><?php echo "20". date("y"); ?> © <a href="https://developerrony.com"> MH RONY</a>. All right reserved by <a href="">Code Camp BD</a> </p>
+    </div>
 
-        </div>
-
-        <?php
-include("footer.php");
-?>
-
-        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="plugins/datatables/jquery.dataTables.js"></script>
-        <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/datatables/jquery.dataTables.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
+    <script src="dist/js/demo.js"></script>
+    <script>
+    $(function() {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+        });
+    });
+    </script>
 </body>
-
 </html>

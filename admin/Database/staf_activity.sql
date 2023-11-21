@@ -55,6 +55,8 @@ CREATE TABLE `emp_attendance` (
   `attendance_date` date NOT NULL,
   `attendance_timein` time NOT NULL,
   `attendance_timeout` time NOT NULL,
+  `break_timein` time NOT NULL,
+  `break_timeout` time NOT NULL,
   `attendance_hour` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

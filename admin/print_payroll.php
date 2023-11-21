@@ -107,6 +107,14 @@ include("controller.php");
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item active">
+                            <a href="employee2_attendance.php" class="nav-link active">
+                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <p>
+                                    Break Time
+                                </p>
+                            </a>
+                        </li>
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>
