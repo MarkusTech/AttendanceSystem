@@ -13,8 +13,3 @@ if($int > 4){
 echo $int;
 
 ?>
-
-<!--- Author By: MH RONY
-// Author Website: https://developerrony.com
-// Github Link: https://github.com/dev-mhrony
-// Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
