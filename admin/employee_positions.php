@@ -72,10 +72,9 @@ include("controller.php");
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: #222d32;">
 
             <a href="home.php" class="brand-link">
-                <img src="dist/img/Logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
-                <span class="brand-text font-weight-light">Employ Attendance</span>
+                <img src="dist/img/favicon.ico" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
+                <span class="brand-text font-weight-light">Banquerigo Attendance</span>
             </a>
-
 
             <div class="sidebar">
                 <nav class="mt-2">
