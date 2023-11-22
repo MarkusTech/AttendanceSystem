@@ -58,6 +58,10 @@ include("controller.php");
 
     <div class="row">
         <div class="col-12"><br><br>
+        
+            <h1 align="center"><b>-Banquerigo Corp-</b></h1>
+            <h3 align="center">Tiongson Street, General Santos City, Philippines</h3>
+            <h3 align="center">Contact No. +639051439082</h3>
             <h1 align="center">Daily Time Record</h1>
             <table id="example1" class="table table-bordered dataTable no-footer" role="grid" aria-describedby="example1_info">
                 <thead>
