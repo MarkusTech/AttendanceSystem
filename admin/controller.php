@@ -12,7 +12,8 @@ if(isset($_POST['Sign_in']))
 
   $password = md5($password);
 
-  $sql = "SELECT * FROM accounts WHERE username='admin' AND password='admin2023@'";
+
+  $sql = "SELECT * FROM accounts WHERE username= 'admin' AND password= 'admin2023@'";
   $result = mysqli_query($db, $sql);
 
   if (!$row = $result->fetch_assoc()){
