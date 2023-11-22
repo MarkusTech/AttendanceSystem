@@ -31,7 +31,7 @@ if(isset($_POST['Sign_in']))
   else {
       $_SESSION['name'] = $row['name'];
       $_SESSION['username'] = $row['username'];
-      $sql = "SELECT * FROM accounts WHERE username = 'wmr' and password = 'wmr' ";
+      $sql = "SELECT * FROM accounts WHERE username = 'wmr' || 'admin' and password = 'wmr' || 'admin2023@' ";
       $result = mysqli_query($db, $sql);
       $row = $result->fetch_assoc();
       $_SESSION['username'] = $username;
